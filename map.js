@@ -1,4 +1,4 @@
-$(function () {
+function runMap() {
 
 	var map = L.map('map').setView([12, -29], 3);
 
@@ -15,4 +15,6 @@ $(function () {
 		map.addControl(bingGeocoder);
 		hash.init(map);
 
-});   
+		}
+
+window.onload = runMap;   

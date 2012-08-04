@@ -13,3 +13,7 @@ What's included?
 * Hash (adds the current lat, lon and zoom level to your URl)
 * Bing Geocoder (Little search bar)
 * jQuery (Because everthing includes jQuery)
+
+Issues
+======
+* It seems as though 'Hash' is slowing down the map a bit.
