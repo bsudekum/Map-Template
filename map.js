@@ -1,6 +1,6 @@
 $(function () {
 
-	var map = L.map('map').setView([51.505, -0.09], 13);
+	var map = L.map('map').setView([12, -29], 3);
 
 		L.tileLayer('http://{s}.tile.cloudmade.com/BC9A493B41014CAABB98F0471D759707/997/256/{z}/{x}/{y}.png', {
 			maxZoom: 18,
@@ -8,9 +8,11 @@ $(function () {
 		}).addTo(map);
 
 		var fullScreen = new L.Control.FullScreen(); 
-		var bingGeocoder = new L.Control.BingGeocoder('AmFJ03ozVugKu0Y_uijzwvFEKfKY5VCesm1eiBqGhchxQ3uKFUQMYsKJLNdfHsIR');
+		var bingGeocoder = new L.Control.BingGeocoder('Your-API-Key'); //Sign up here: http://www.bingmapsportal.com/
+		var hash = new L.Hash();
 
 		map.addControl(fullScreen);
 		map.addControl(bingGeocoder);
+		hash.init(map);
 
-});  
+});   
