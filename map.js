@@ -15,6 +15,26 @@ function runMap() {
 		map.addControl(bingGeocoder);
 		hash.init(map);
 
-		}
+		var geolocate = document.getElementById('geolocate');
+
+		geolocate.onclick = function() {
+
+		function onLocationFound(e) {
+
+			L.marker(e.latlng).addTo(map)
+			.bindPopup("You're right here!").openPopup();
+			}
+
+		function onLocationError(e) {
+			alert(e.message);
+			}
+
+		map.on('locationfound', onLocationFound);
+		map.on('locationerror', onLocationError);
+
+		map.locate({setView: true});
+	}
+
+}
 
 window.onload = runMap;   

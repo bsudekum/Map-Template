@@ -6,29 +6,28 @@
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<link rel="stylesheet" href="assets/leaflet/leaflet.css" />
-	<!--[if lte IE 8]><link rel="stylesheet" href="assets/leaflet/leaflet.ie.css" /><![endif]-->
-	<link rel="stylesheet" href="assets/geocoder/Control.BingGeocoder.css" />
+	<link rel="stylesheet" href="assets/map/leaflet/leaflet.css" />
+	<link rel="stylesheet" href="assets/css/map.css" />
+	<!--[if lte IE 8]><link rel="stylesheet" href="assets/map/leaflet/leaflet.ie.css" /><![endif]-->
+	<link rel="stylesheet" href="assets/map/geocoder/Control.BingGeocoder.css" />
 
-	<script src="assets/leaflet/leaflet.js"></script>
+	<script src="assets/map/leaflet/leaflet.js"></script>
 	
 	<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>-->
 	
-	<script src="assets/Control.FullScreen.js"></script>
-	<script src="assets/geocoder/Control.BingGeocoder.js"></script>
-	<script src="assets/leaflet-hash.js"></script>
+	<script src="assets/map/Control.FullScreen.js"></script>
+	<script src="assets/map/geocoder/Control.BingGeocoder.js"></script>
+	<script src="assets/map/leaflet-hash.js"></script>
 
 	<script src="map.js"></script>
-  
-  <style>
-    body { margin:0px; padding:0px; }
-    #map { position:absolute; width:100%; height:100%; top:0px; left:0px; }
-  </style>
 
 </head>
 <body>
 
 	<div id="map"></div>
+	<div id="geolocate">
+         <a href="#" title="Find my Location"><img src="assets/image/location.png"/></a>
+    </div>
 
 </body>
 </html>
